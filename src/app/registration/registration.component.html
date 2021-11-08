@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="welcome">
+    <div class="frame">
+     <div class="ellipse">
+       <div class="checkmark" *ngIf="registration_condition"></div>
+     </div>
+
+    </div>
+    <div *ngIf="successful_condition">
+      <div class="successful" >Registration was successful</div>
+      <div class="get_started" >Get started with the exercises</div>
+    </div>
+
+  </div>
+</div>
+
