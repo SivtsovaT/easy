@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent }   from './about.component';
 import { HomeComponent }   from './home.component';
 import { NotFoundComponent }   from './not-found.component';
+import { EnterNameComponent } from './enter-name/enter-name.component';
 
 const appRoutes: Routes =[
   { path: '', component: HomeComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes =[
     AppComponent,
     HomeComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EnterNameComponent
 
   ],
   imports: [
