@@ -37,12 +37,9 @@ h2 {
 }
 
 .login {
- /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;*/
   display: block;
   text-align: center;
+  margin-bottom: 18px;
 
 }
 .email_field {
@@ -89,4 +86,51 @@ input.ng-touched.ng-valid {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
+a {
+  width: 97px;
+  height: 13px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+.forgot_password {
+  display: flex;
+  width: 327px;
+}
+.line {
+  /*border: 1px solid #E0E0E0;*/
+  width: 152px;
+  height: 1px;
+  color: #E0E0E0;
+  border-color: midnightblue;
+}
+.line_before {
+  width: 150px;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+.line_after {
+  width: 140px;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+.before_after {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.or {
+  width: 14px;
+  height: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #828282;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 2px;
+}

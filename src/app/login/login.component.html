@@ -15,21 +15,37 @@
 
   <div class="form-group">
 
-    <input #input type ="password"  [(ngModel)]="user.password" #password='ngModel' maxlength="10" minlength="5"
+    <input #input type="password" [(ngModel)]="user.password" #password='ngModel' maxlength="10" minlength="5"
            placeholder="Password" [ngClass]="{pass_field: true}" required/>
 
     <div [hidden]="password.valid || password.untouched" class="alert alert-danger">
       пароль должен включать от 5 до 10 символов
     </div>
 
+    <!--cant declare property disabled to applicate directive app-go-or-start-button -->
     <button [disabled]="email.invalid || password.invalid"
             class="button_go" (click)="addUser()">go
     </button>
-    <!--cant declare property disabled to applicate directive app-go-or-start-button -->
-
   </div>
+
+
 </div>
 
+
+    <a href="#">Forgot a password?</a>
+    <div class="before_after">
+      <hr class="line_before">
+      <div class="or">or</div>
+      <hr class="line_after">
+    </div>
+
+
+  <div class="signup-src-btns">
+    <app-app-authorization> content="Sign up with Google"></app-app-authorization>
+    <app-app-authorization> content="Sign up with Facebook"></app-app-authorization>
+    <app-app-authorization> content="Sign up with Phone"></app-app-authorization>
+
+  </div>
 
 
 
