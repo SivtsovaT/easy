@@ -10,6 +10,7 @@ import { EnterNameComponent } from './enter-name/enter-name.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from "@angular/forms";
+import { ButtonGoOrStartComponent } from './button-go-or-start/button-go-or-start.component';
 
 const appRoutes: Routes =[
   { path: '', component: HomeComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes =[
     NotFoundComponent,
     EnterNameComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    ButtonGoOrStartComponent
 
   ],
   imports: [
