@@ -15,12 +15,16 @@ import {FormsModule} from "@angular/forms";
 import { ButtonGoOrStartComponent } from './button-go-or-start/button-go-or-start.component';
 import { AppAuthorizationComponent } from './app-authorization/app-authorization.component';
 import { NameComponent } from './name/name.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
 
 const appRoutes: Routes =[
   { path: '', component: HomeComponent},
   { path: 'about', component: AboutComponent},
   { path: 'login', component: LoginComponent},
   { path: 'name', component: NameComponent},
+  { path: 'navbar', component: NavbarComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -35,7 +39,9 @@ const appRoutes: Routes =[
     LoginComponent,
     ButtonGoOrStartComponent,
     AppAuthorizationComponent,
-    NameComponent
+    NameComponent,
+    NavbarComponent
+
 
   ],
   imports: [
@@ -43,7 +49,9 @@ const appRoutes: Routes =[
     RouterModule.forRoot(appRoutes),
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
 
   ],
   providers: [],
