@@ -1,4 +1,9 @@
-<mat-tab-group>
-  <mat-tab *ngFor="let item of layout" [label]="item">Hello from {{item}}</mat-tab>
-
+<mat-tab-group animationDuration="0ms">
+    <mat-tab *ngFor="let item of layout" [label]="item">
+      <div class="example-small-box mat-elevation-z4">
+        Hello from {{item}}
+      </div>
+      </mat-tab>
 </mat-tab-group>
+
+
