@@ -31,6 +31,7 @@ import {CommonModule} from "@angular/common";
 //import {FlatpickrModule} from "angularx-flatpickr";
 import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
 import { TabsCalendarComponent } from './tabs-calendar/tabs-calendar.component';
+import {MatTabsModule} from "@angular/material/tabs";
 
 
 
@@ -42,6 +43,7 @@ const appRoutes: Routes =[
   { path: 'navbar', component: NavbarComponent},
   { path: 'date', component: DateComponent},
   { path: 'calendar', component: CalendarComponent},
+  { path: 'tabs', component: TabsCalendarComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -82,7 +84,8 @@ const appRoutes: Routes =[
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
-    })
+    }),
+    MatTabsModule
 
   ],
 

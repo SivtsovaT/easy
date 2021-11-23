@@ -1,1 +1,4 @@
-<p>tabs-calendar works!</p>
+<mat-tab-group>
+  <mat-tab *ngFor="let item of layout" [label]="item">Hello from {{item}}</mat-tab>
+
+</mat-tab-group>
