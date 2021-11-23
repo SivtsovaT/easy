@@ -18,6 +18,11 @@ import { NameComponent } from './name/name.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
+import { DateComponent } from './date/date.component';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 const appRoutes: Routes =[
   { path: '', component: HomeComponent},
@@ -25,6 +30,7 @@ const appRoutes: Routes =[
   { path: 'login', component: LoginComponent},
   { path: 'name', component: NameComponent},
   { path: 'navbar', component: NavbarComponent},
+  { path: 'date', component: DateComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -40,7 +46,8 @@ const appRoutes: Routes =[
     ButtonGoOrStartComponent,
     AppAuthorizationComponent,
     NameComponent,
-    NavbarComponent
+    NavbarComponent,
+    DateComponent
 
 
   ],
@@ -51,7 +58,11 @@ const appRoutes: Routes =[
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],
