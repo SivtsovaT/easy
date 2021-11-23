@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {getHours} from 'date-fns';
 
 @Component({
   selector: 'app-tabs-calendar',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class TabsCalendarComponent  {
   layout: string[];
 
-  constructor() {
+  dateObj = new Date();
+
+    constructor() {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const today = new Date()
     this.layout = [...Array(8).keys()].map(i => days[(i + today.getDay()) % days.length]);
@@ -16,3 +19,6 @@ export class TabsCalendarComponent  {
 
   }
 }
+
+
+
