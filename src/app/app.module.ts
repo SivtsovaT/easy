@@ -23,6 +23,16 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import { CalendarComponent } from './calendar/calendar.component';
+import {CalendarModule} from "angular-calendar";
+import {DateAdapter} from "angular-calendar";
+import {adapterFactory} from 'angular-calendar/date-adapters/date-fns';
+import {CommonModule} from "@angular/common";
+//import {FlatpickrModule} from "angularx-flatpickr";
+import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
+import { TabsCalendarComponent } from './tabs-calendar/tabs-calendar.component';
+
+
 
 const appRoutes: Routes =[
   { path: '', component: HomeComponent},
@@ -31,6 +41,7 @@ const appRoutes: Routes =[
   { path: 'name', component: NameComponent},
   { path: 'navbar', component: NavbarComponent},
   { path: 'date', component: DateComponent},
+  { path: 'calendar', component: CalendarComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -47,7 +58,9 @@ const appRoutes: Routes =[
     AppAuthorizationComponent,
     NameComponent,
     NavbarComponent,
-    DateComponent
+    DateComponent,
+    CalendarComponent,
+    TabsCalendarComponent
 
 
   ],
@@ -62,9 +75,18 @@ const appRoutes: Routes =[
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    CommonModule,
+    NgbModalModule,
+    //FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    })
 
   ],
+
+  exports: [CalendarComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

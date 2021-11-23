@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="calendar-wrapper">
+    <ng-template
+      #currentTimeMarkerTemplate
+      let-columnDate="columnDate"
+      let-dayStartHour="dayStartHour"
+      let-dayStartMinute="dayStartMinute"
+      let-dayEndHour="dayEndHour"
+      let-dayEndMinute="dayEndMinute"
+      let-isVisible="isVisible"
+      let-topPx="topPx"
+    >
+    </ng-template>
+
+    <p>{{viewDate}}</p>
+    <mwl-calendar-week-view
+      [viewDate]="viewDate"
+      [currentTimeMarkerTemplate]="currentTimeMarkerTemplate"
+      [dayStartHour]="dayStartHour"
+      [dayEndHour]="dayEndHour"
+    >
+    </mwl-calendar-week-view>
+  </div>
+
+</div>
+
