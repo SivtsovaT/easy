@@ -1,24 +1,14 @@
 <div class="tabs-wrapper">
 
-  <ng-template
-    #currentTimeMarkerTemplate
-    let-columnDate="columnDate"
-    let-dayStartHour="dayStartHour"
-    let-dayStartMinute="dayStartMinute"
-    let-dayEndHour="dayEndHour"
-    let-dayEndMinute="dayEndMinute"
-    let-isVisible="isVisible"
-    let-topPx="topPx"
-  >
-  </ng-template>
-
-
  <div>{{ dateObj | date }}</div>
-  <mat-tab-group animationDuration="0ms">
+  <mat-tab-group animationDuration="0ms" >
     <mat-tab *ngFor="let item of layout" [label]="item">
       <div class="tabs-content">
         Hello from {{item}}
       </div>
     </mat-tab>
   </mat-tab-group>
+
 </div>
+
+

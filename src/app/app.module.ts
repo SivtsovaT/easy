@@ -62,7 +62,8 @@ const appRoutes: Routes =[
     NavbarComponent,
     DateComponent,
     CalendarComponent,
-    TabsCalendarComponent
+    TabsCalendarComponent,
+
 
 
   ],
@@ -80,6 +81,7 @@ const appRoutes: Routes =[
     MatInputModule,
     CommonModule,
     NgbModalModule,
+
     //FlatpickrModule.forRoot(),
     CalendarModule.forRoot({
       provide: DateAdapter,

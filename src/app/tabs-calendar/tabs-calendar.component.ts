@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {getHours} from 'date-fns';
+import {ThemePalette} from "@angular/material/core";
 
 @Component({
   selector: 'app-tabs-calendar',
@@ -8,6 +8,8 @@ import {getHours} from 'date-fns';
 })
 export class TabsCalendarComponent  {
   layout: string[];
+
+
 
   dateObj = new Date();
 
