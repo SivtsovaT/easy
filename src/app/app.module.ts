@@ -32,6 +32,7 @@ import {CommonModule} from "@angular/common";
 import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
 import { TabsCalendarComponent } from './tabs-calendar/tabs-calendar.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { LastTrainingComponent } from './last-training/last-training.component';
 
 
 
@@ -43,6 +44,7 @@ const appRoutes: Routes =[
   { path: 'navbar', component: NavbarComponent},
   { path: 'date', component: DateComponent},
   { path: 'calendar', component: CalendarComponent},
+  { path: 'last', component: LastTrainingComponent},
   { path: 'tabs', component: TabsCalendarComponent},
   { path: '**', component: NotFoundComponent }
 ];
@@ -63,6 +65,7 @@ const appRoutes: Routes =[
     DateComponent,
     CalendarComponent,
     TabsCalendarComponent,
+    LastTrainingComponent,
 
 
 
