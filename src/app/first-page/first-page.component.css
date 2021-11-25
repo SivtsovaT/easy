@@ -1,0 +1,25 @@
+.container {
+  width: 375px;
+  height: 812px;
+  border: 1px black solid;
+  background: #F4F7F6;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.last-training {
+  width: 129px;
+  height: 26px;
+  font-family: Mont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+}

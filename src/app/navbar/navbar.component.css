@@ -1,10 +1,18 @@
+
 .navbar {
-  justify-content: space-between;
-}
-span {
-  padding-right: 1rem;
+  position: fixed;
+  bottom: 70px;
+  display: flex;
+  justify-content: space-around;
+  color: #FCFFFE;
+  background-color: #1F2922;
+  width: 344px;
+  height: 68px;
+  box-shadow: 0px 4px 15px rgba(68, 105, 84, 0.3);
+  border-radius: 12px;
 
 }
-.material-icons {
-  background-color: black;
+
+.material-icons:hover {
+  color: #6FCF97;
 }

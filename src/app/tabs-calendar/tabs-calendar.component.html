@@ -1,6 +1,6 @@
 <div class="tabs-wrapper">
 
- <div>{{ dateObj | date }}</div>
+ <div class="date">{{ dateObj | date }}</div>
   <mat-tab-group animationDuration="0ms" >
     <mat-tab *ngFor="let item of layout" [label]="item">
       <div class="tabs-content">

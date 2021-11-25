@@ -47,6 +47,7 @@ const appRoutes: Routes =[
   { path: 'calendar', component: CalendarComponent},
   { path: 'last', component: LastTrainingComponent},
   { path: 'tabs', component: TabsCalendarComponent},
+  { path: 'fp', component: FirstPageComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
