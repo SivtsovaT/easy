@@ -33,6 +33,7 @@ import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
 import { TabsCalendarComponent } from './tabs-calendar/tabs-calendar.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import { LastTrainingComponent } from './last-training/last-training.component';
+import { FirstPageComponent } from './first-page/first-page.component';
 
 
 
@@ -66,6 +67,7 @@ const appRoutes: Routes =[
     CalendarComponent,
     TabsCalendarComponent,
     LastTrainingComponent,
+    FirstPageComponent,
 
 
 
