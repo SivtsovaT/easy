@@ -28,13 +28,14 @@ import {CalendarModule} from "angular-calendar";
 import {DateAdapter} from "angular-calendar";
 import {adapterFactory} from 'angular-calendar/date-adapters/date-fns';
 import {CommonModule} from "@angular/common";
-//import {FlatpickrModule} from "angularx-flatpickr";
 import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
 import { TabsCalendarComponent } from './tabs-calendar/tabs-calendar.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import { LastTrainingComponent } from './last-training/last-training.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 
+import {IvyCarouselModule} from "angular-responsive-carousel";
+import { PeriodComponent } from './period/period.component';
 
 
 const appRoutes: Routes =[
@@ -47,7 +48,9 @@ const appRoutes: Routes =[
   { path: 'calendar', component: CalendarComponent},
   { path: 'last', component: LastTrainingComponent},
   { path: 'tabs', component: TabsCalendarComponent},
+  { path: 'period', component: PeriodComponent},
   { path: 'fp', component: FirstPageComponent},
+
   { path: '**', component: NotFoundComponent }
 ];
 
@@ -69,6 +72,8 @@ const appRoutes: Routes =[
     TabsCalendarComponent,
     LastTrainingComponent,
     FirstPageComponent,
+    PeriodComponent,
+
 
 
 
@@ -87,8 +92,8 @@ const appRoutes: Routes =[
     MatInputModule,
     CommonModule,
     NgbModalModule,
+    IvyCarouselModule,
 
-    //FlatpickrModule.forRoot(),
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
