@@ -1,3 +1,9 @@
-.invisible {
+.invisibleWeek {
+  display: none;
+}
+.invisibleMonth {
+  display: none;
+}
+.invisibleYear {
   display: none;
 }

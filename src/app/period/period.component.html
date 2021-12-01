@@ -1,5 +1,20 @@
 
-<div [ngClass]="{invisible:visibility}">
+
+<button (click)="toggleWeek()">week</button>
+<button (click)="toggleMonth()">month</button>
+<button (click)="toggleYear()">year</button>
+
+<div [ngClass]="{invisibleWeek:visibilityWeek}">
   <div>I am week</div>
 </div>
-<button (click)="toggle()">week</button>
+
+
+<div [ngClass]="{invisibleMonth:visibilityMonth}">
+  <div>I am month</div>
+</div>
+
+
+<div [ngClass]="{invisibleYear:visibilityYear}">
+  <div>I am year</div>
+</div>
+

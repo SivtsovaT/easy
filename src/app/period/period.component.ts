@@ -6,9 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./period.component.css']
 })
 export class PeriodComponent implements OnInit {
-  visibility:boolean = true;
-  toggle() {
-    this.visibility = !this.visibility;
+  visibilityWeek:boolean = true;
+  visibilityMonth:boolean = true;
+  visibilityYear:boolean = true;
+
+  toggleWeek() {
+    this.visibilityWeek = !this.visibilityWeek;
+
+  }
+  toggleMonth() {
+
+    this.visibilityMonth = !this.visibilityMonth;
+
+  }
+  toggleYear() {
+
+    this.visibilityYear = !this.visibilityYear;
   }
 
   constructor() { }
