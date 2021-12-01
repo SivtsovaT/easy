@@ -36,6 +36,8 @@ import { FirstPageComponent } from './first-page/first-page.component';
 
 import {IvyCarouselModule} from "angular-responsive-carousel";
 import { PeriodComponent } from './period/period.component';
+import { GenderComponent } from './gender/gender.component';
+
 
 
 const appRoutes: Routes =[
@@ -49,6 +51,7 @@ const appRoutes: Routes =[
   { path: 'last', component: LastTrainingComponent},
   { path: 'tabs', component: TabsCalendarComponent},
   { path: 'period', component: PeriodComponent},
+  { path: 'gender', component: GenderComponent},
   { path: 'fp', component: FirstPageComponent},
 
   { path: '**', component: NotFoundComponent }
@@ -73,6 +76,8 @@ const appRoutes: Routes =[
     LastTrainingComponent,
     FirstPageComponent,
     PeriodComponent,
+    GenderComponent,
+
 
 
 

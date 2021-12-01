@@ -7,3 +7,13 @@
 .invisibleYear {
   display: none;
 }
+.one  {
+  display: none;
+}
+.two  {
+  display: none;
+}
+.active {
+  display: block;
+}
+

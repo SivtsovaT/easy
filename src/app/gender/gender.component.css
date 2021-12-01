@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  width: 427px;
+  height: 858px;
+  border: 1px black solid;
+  background: #FFFFFF;
+  padding: 18px;
+
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 425px;
+  height: 812px;
+
+}
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.gender-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 45px;
+  margin-right: 53px;
+}
+.active {
+  width:126px;
+  height:126px;
+  border: 2px solid rgba(224, 224, 224, 0.5);
+  background-color: #6FCF97;
+  text-align: center;
+
+}
+.gender  {
+  border-radius: 50%;
+  border:1px solid #ccc;
+  width: 126px;
+  height: 126px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 12px;
+  /*it is available to stay  background-color: #F2F2F2;*/
+
+}
+.gender-content {
+
+  width: 66px;
+  height: 34px;
+  left: 75px;
+  top: 389px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+}
+h2 {
+  width: 297px;
+  height: 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 70px;
+
+}
+.ellipse-wrapper {
+  margin-top: 207px;
+  display: flex;
+  justify-content: center;
+}
+.ellipse-black {
+  width: 14px;
+  height: 14px;
+  background-color: #4F4F4F;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ellipse-grey {
+  width: 14px;
+  height: 14px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  margin-right: 10px;
+
+}
+
+.button-wrapper {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  margin-bottom: 30px;
+}

@@ -1,8 +1,8 @@
 
 
-<button (click)="toggleWeek()">week</button>
-<button (click)="toggleMonth()">month</button>
-<button (click)="toggleYear()">year</button>
+<button [class.active]="isActive" (click)="toggleWeek(); changeClassW()">week</button>
+<button [class.active]="isActive" (click)="toggleMonth(); changeClassM()">month</button>
+<button [class.active]="isActive" (click)="toggleYear(); changeClassY()">year</button>
 
 <div [ngClass]="{invisibleWeek:visibilityWeek}">
   <div>I am week</div>
@@ -18,3 +18,13 @@
   <div>I am year</div>
 </div>
 
+<!--
+<div class="gender" [class.active]="isActive" (click)="changeClass()">-->
+
+
+<hr>
+
+<button (click)="changeClassOne()">press me</button>
+<button (click)="changeClassTwo()">press me</button>
+<div class="one" [class.active]="isActiveOne">one</div>
+<div class="two" [class.active]="isActiveTwo">two</div>
