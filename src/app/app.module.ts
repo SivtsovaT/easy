@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {Routes, RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonModule} from "@angular/material/button";
+import {FormsModule} from "@angular/forms";
+import {NgxChartsModule} from "@swimlane/ngx-charts";
 
 import { AppComponent } from './app.component';
 import { AboutComponent }   from './about.component';
@@ -11,7 +13,6 @@ import { NotFoundComponent }   from './not-found.component';
 import { EnterNameComponent } from './enter-name/enter-name.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
-import {FormsModule} from "@angular/forms";
 import { ButtonGoOrStartComponent } from './button-go-or-start/button-go-or-start.component';
 import { AppAuthorizationComponent } from './app-authorization/app-authorization.component';
 import { NameComponent } from './name/name.component';
@@ -37,6 +38,8 @@ import { FirstPageComponent } from './first-page/first-page.component';
 import {IvyCarouselModule} from "angular-responsive-carousel";
 import { PeriodComponent } from './period/period.component';
 import { GenderComponent } from './gender/gender.component';
+import { ChartComponent } from './chart/chart.component';
+
 
 
 
@@ -52,6 +55,7 @@ const appRoutes: Routes =[
   { path: 'tabs', component: TabsCalendarComponent},
   { path: 'period', component: PeriodComponent},
   { path: 'gender', component: GenderComponent},
+  { path: 'chart', component: ChartComponent},
   { path: 'fp', component: FirstPageComponent},
 
   { path: '**', component: NotFoundComponent }
@@ -77,6 +81,9 @@ const appRoutes: Routes =[
     FirstPageComponent,
     PeriodComponent,
     GenderComponent,
+    ChartComponent,
+
+
 
 
 
@@ -98,6 +105,7 @@ const appRoutes: Routes =[
     CommonModule,
     NgbModalModule,
     IvyCarouselModule,
+    NgxChartsModule,
 
     CalendarModule.forRoot({
       provide: DateAdapter,
