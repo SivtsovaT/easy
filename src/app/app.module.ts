@@ -39,6 +39,9 @@ import {IvyCarouselModule} from "angular-responsive-carousel";
 import { PeriodComponent } from './period/period.component';
 import { GenderComponent } from './gender/gender.component';
 import { ChartComponent } from './chart/chart.component';
+import { PlayCombinationFiveComponent } from './play-combination-five/play-combination-five.component';
+import { PlayCombinationResultComponent } from './play-combination-result/play-combination-result.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -56,6 +59,8 @@ const appRoutes: Routes =[
   { path: 'period', component: PeriodComponent},
   { path: 'gender', component: GenderComponent},
   { path: 'chart', component: ChartComponent},
+  { path: 'result', component: PlayCombinationResultComponent},
+  { path: 'profile', component: ProfileComponent},
   { path: 'fp', component: FirstPageComponent},
 
   { path: '**', component: NotFoundComponent }
@@ -82,6 +87,9 @@ const appRoutes: Routes =[
     PeriodComponent,
     GenderComponent,
     ChartComponent,
+    PlayCombinationFiveComponent,
+    PlayCombinationResultComponent,
+    ProfileComponent,
 
 
 
