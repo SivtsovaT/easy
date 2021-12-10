@@ -1,0 +1,17 @@
+.profile_container {
+  width: 336px;
+  height: 56px;
+
+  border-radius: 8px;
+}
+button {
+  width: 56px;
+  height: 56px;
+  left: 24px;
+  background: #ECF2F0;
+  border-radius: 8px;
+}
+.action {
+  background: #BDBDBD;
+  opacity: 0.1;
+}

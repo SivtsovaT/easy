@@ -42,6 +42,7 @@ import { ChartComponent } from './chart/chart.component';
 import { PlayCombinationFiveComponent } from './play-combination-five/play-combination-five.component';
 import { PlayCombinationResultComponent } from './play-combination-result/play-combination-result.component';
 import { ProfileComponent } from './profile/profile.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 
 
@@ -61,6 +62,7 @@ const appRoutes: Routes =[
   { path: 'chart', component: ChartComponent},
   { path: 'result', component: PlayCombinationResultComponent},
   { path: 'profile', component: ProfileComponent},
+  { path: 'edit', component: EditProfileComponent},
   { path: 'fp', component: FirstPageComponent},
 
   { path: '**', component: NotFoundComponent }
@@ -90,6 +92,7 @@ const appRoutes: Routes =[
     PlayCombinationFiveComponent,
     PlayCombinationResultComponent,
     ProfileComponent,
+    EditProfileComponent,
 
 
 
